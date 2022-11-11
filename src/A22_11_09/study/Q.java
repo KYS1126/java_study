@@ -3,8 +3,8 @@ package A22_11_09.study;
 public class Q {
 
 	public static void main(String[] args) {
-		int x = 15;
-		char ch = 'x';
+//		int x = 15;
+//		char ch = 'x';
 		
 		
 //		if(10<x && x<20) {
@@ -29,11 +29,11 @@ public class Q {
 //			System.out.println("소문자 true");
 //		}
 //		
-		int year = 404;
-		
-		if (year/400 == 0 && year/4 ==0 && year/100 !=0) {
-			System.out.println("true");
-		}
+//		int year = 404;
+//		
+//		if (year/400 == 0 && year/4 ==0 && year/100 !=0) {
+//			System.out.println("true");
+//		}
 		
 		
 //		boolean powerOn = false;
@@ -77,15 +77,27 @@ public class Q {
 		
 //==============================================================
 		
-		int i = (int)(Math.random()*6)+1;
-		int j = (int)(Math.random()*6)+1;
 		int sum = 0;
 		
 		do {
+			int i = (int)(Math.random()*6)+1;
+			int j = (int)(Math.random()*6)+1;
 			i++;
 			j++;
-		} while (i == 1);
-		System.out.println(sum);
+			System.out.println("1번주사위:" + i);
+			System.out.println("2번주사위:" + j);
+			sum = i+j;
+		} while (sum != 5);
+		
+		System.out.println("합계:" + sum);
+		
+//================================================
+		//asd
+		for (int i=0; i <=10; i++) {
+			
+		}
+		
+		
 		
 		
 	}
