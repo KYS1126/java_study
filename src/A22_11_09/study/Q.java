@@ -77,30 +77,50 @@ public class Q {
 		
 //==============================================================
 		
-		int sum = 0;
-		
-		do {
-			int i = (int)(Math.random()*6)+1;
-			int j = (int)(Math.random()*6)+1;
-			i++;
-			j++;
-			System.out.println("1번주사위:" + i);
-			System.out.println("2번주사위:" + j);
-			sum = i+j;
-		} while (sum != 5);
-		
-		System.out.println("합계:" + sum);
+//		int sum = 0;
+//		
+//		do {
+//			int i = (int)(Math.random()*6)+1;
+//			int j = (int)(Math.random()*6)+1;
+//			i++;
+//			j++;
+//			System.out.println("1번주사위:" + i);
+//			System.out.println("2번주사위:" + j);
+//			sum = i+j;
+//		} while (sum != 5);
+//		
+//		System.out.println("합계:" + sum);
 		
 //================================================
-		//asd
-		for (int i=0; i <=10; i++) {
-			
+//		//asd
+//		for (int i=0; i <=10; i++) {
+//			
+//		}
+		
+
+		int[][] array = {
+				{95,86},
+				{83,92,96},
+				{78,83,73,87,88}
+		};
+		
+		int result = 0;
+		
+		for (int i=0; i<array.length; i++) {
+			System.out.println(i);
+			for (int j=0; j<array.length[i]; j++) {
+				
+			}
 		}
 		
+		
+	
 		
 		
 		
 	}
+	
+	
 
 
 
