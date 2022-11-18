@@ -10,7 +10,7 @@ public class ScannerExample {
 
 		System.out.println("x값 입력: ");
 		// nextLine - 엔터키를 누르면 문자열을 읽는다.
-		String strX = scanner.nextLine();
+		String strX = scanner.
 		// 정수형으로 강제 형변환
 		int x = Integer.parseInt(strX);
 

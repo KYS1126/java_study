@@ -6,7 +6,7 @@ public class member {
 	String id;
 	String password;
 	int age;
-	
+
 	member(String name, String id, String password, int age) {
 		this.name=name;
 		this.id=id;
@@ -22,6 +22,10 @@ public class member {
 	
 	
 	
-
-
+	
+	
+	
+	
+	
+	
 }

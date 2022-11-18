@@ -1,12 +1,17 @@
 package test.ch06.exam01.pakage1;
 
 public class B {
-//	A a = new A(); //A클래서(default) 접근 가능
-	
-	A a1 = new A(true); //문제없음
-	A a2 = new A(1); //문제없음
-//	A a3 = new A("안녕"); //문제
-	
+	public void method() {		
+		A a = new A();
+		
+		a.field1 = 1;
+		a.field2 = 1;
+		a.field3 = 1;
+		a.method1();
+		a.method2();
+		a.method3();
+		
+	}
 	
 	
 }
