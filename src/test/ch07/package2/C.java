@@ -1,13 +1,14 @@
 package test.ch07.package2;
 
+import java.util.StringTokenizer;
+
 import test.ch07.package1.A;
 
 public class C {
 
-	public void method() {
-		A a = new A();
-		a.field = "1"; 
-		a.method();
-		
-	}
+	String str = "아이디,이름,패스워드";
+	
+	StringTokenizer str1 = new StringTokenizer(str , ",");
+
+
 }

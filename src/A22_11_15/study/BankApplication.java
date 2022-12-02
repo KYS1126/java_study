@@ -89,29 +89,35 @@ public class BankApplication {
 				} else if (userAno.equals(accountArray[i].getAno()) ) {
 					System.out.println("예금액");
 					int userBalance = scanner.nextInt();
-					accountArray[i].getBalance();   
-					
+					accountArray[i].setBalance(accountArray[i].getBalance() + userBalance);
+					System.out.println(accountArray[i].getBalance());
 				}
 			}
 		}		
 	}
 	
 	//4.출금
-	public static void withdraw() {}
-	//5.종료
+	public static void withdraw() {
+		System.out.println("--------------");
+		System.out.println("출금");
+		System.out.println("--------------");
+		System.out.println("계좌번호:");
+		
+		String userAno = scanner.next();
+		
+		for(int i=0; i<accountArray.length; i++) {
+			if(accountArray[i] != null) {
+				if (!userAno.equals(accountArray[i].getAno()) ) {
+					System.out.println("계좌번호를 확인하시오");
+				} else if (userAno.equals(accountArray[i].getAno()) ) {
+					System.out.println("출금액");
+					int userBalance = scanner.nextInt();
+					accountArray[i].setBalance(accountArray[i].getBalance() - userBalance);
+					System.out.println(accountArray[i].getBalance());
+				}
+			}
+		}
+		
+	}
 	
-//	 AccountArray 배열에서 ano와 동일한 Account객체 찾는 역할을 한다.
-//	private static Account findAccount(String ano) {
-//		Account account = null;
-//		for(int i=0; i<accountArray.length; i++) {
-//			if (accountArray[i] != null) {
-//				//불러온 계좌안에 있는 계좌 번호와 매개변수로 받아온 계좌번호 ano가 같은지 체크
-//				String dbAno = accountArray[i].getAno();		
-//				if (dbAno.equals(ano)) {
-//					account = accountArray[i];
-//					break;
-//				}
-//			}
-//		}
-//	}
 }
